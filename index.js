@@ -1,5 +1,5 @@
 function reqListener () {
-    //console.log(this.responseText)
+    const data = this.responseText
   }
   
   const oReq = new XMLHttpRequest()
@@ -7,5 +7,5 @@ function reqListener () {
   oReq.open("GET", "https://codersuk-test.s3-eu-west-1.amazonaws.com/data.json")
   oReq.send()
 
-  const data = JSON.parse(this.responseText)
+  const parsedData = JSON.parse(data)
   console.log(data)
